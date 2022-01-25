@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import { css, withTheme } from '@emotion/react';
+import { css } from '@emotion/react';
 import DemoVideo from './images/clipdrop-demo400.mp4';
 const mainDivStyles = css`
   display: flex;

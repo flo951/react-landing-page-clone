@@ -1,6 +1,6 @@
 import './App.js';
 /** @jsxImportSource @emotion/react */
-import { css, withTheme } from '@emotion/react';
+import { css } from '@emotion/react';
 import { ReactComponent as MyLogo } from './images/logo.svg';
 
 const mainDivStyles = css`
