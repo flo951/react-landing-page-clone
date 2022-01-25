@@ -7,6 +7,7 @@ import { ReactComponent as Wired } from './images/wired.svg';
 import Header from './Header';
 import ProductInfo from './ProductInfo';
 import QuickDemo from './QuickDemo';
+import MainSection from './MainSection';
 
 const mainDivStyles = css`
   display: flex;
@@ -89,6 +90,7 @@ function App() {
           <button css={buttonDownStyles}>Download</button>
         </section>
       </div>
+      <MainSection />
     </>
   );
 }
