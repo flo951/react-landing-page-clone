@@ -23,12 +23,10 @@ const cardStyles = css`
   justify-content: center;
   align-items: center;
   width: 80vw;
-  height: 50vh;
 `;
 const commentCardStyles = css`
   display: flex;
   width: 30vw;
-  height: 40vh;
 `;
 const imageStyles = css`
   height: 80px;
