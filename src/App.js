@@ -35,10 +35,11 @@ const cardStyles = css`
   display: flex;
   justify-content: center;
   background-color: #303030;
-  padding: 20px 100px;
+  padding: 50px 100px;
   border-radius: 15px;
   gap: 15px;
   h2 {
+    color: gray;
     margin-top: 10px;
   }
 `;
@@ -85,14 +86,15 @@ function App() {
       </div>
       <ProductInfo />
       <QuickDemo />
+
+      <MainSection />
+      <CommentCards />
       <div css={mainDivStyles}>
         <section css={cardStyles}>
           <h2>Try it for free</h2>
           <button css={buttonDownStyles}>Download</button>
         </section>
       </div>
-      <MainSection />
-      <CommentCards />
     </>
   );
 }

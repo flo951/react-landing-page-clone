@@ -31,6 +31,9 @@ const upperHeadingStyles = css`
   h2 {
     font-size: 42px;
   }
+  h3 {
+    color: gray;
+  }
   span {
     color: red;
   }

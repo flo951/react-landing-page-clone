@@ -20,7 +20,6 @@ const quickDemoStyles = css`
 `;
 const cardStyles = css`
   display: flex;
-
   justify-content: center;
   align-items: center;
   width: 80vw;
@@ -45,16 +44,30 @@ const nameStyles = css`
   display: flex;
   flex-direction: column;
   h3 {
+    font-size: 24px;
     margin-bottom: 10px;
+    color: gray;
   }
   h4 {
+    font-size: 19px;
     margin-bottom: 10px;
+    color: #6131ea;
   }
   p {
+    font-size: 20px;
     line-height: 25px;
     padding: 1rem;
     margin-top: 30px;
     margin-left: 0;
+    color: gray;
+  }
+  p: before {
+    color: #6131ea;
+    content: '“';
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
   }
 `;
 export default function CommentCards() {
