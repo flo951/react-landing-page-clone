@@ -1,34 +1,21 @@
 import './App.css';
 /** @jsxImportSource @emotion/react */
-import DemoVideo from './images/clipdrop-demo400.mp4';
+
 import DemoVideo2 from './images/demo-preview.mp4';
 import { css, withTheme } from '@emotion/react';
-import { ReactComponent as MyLogo } from './images/logo.svg';
+
 import { ReactComponent as Verge } from './images/the-verge.svg';
 import { ReactComponent as Colossal } from './images/colossal.png';
 import { ReactComponent as Wired } from './images/wired.svg';
+import Header from './Header';
+import ProductInfo from './ProductInfo';
 
 const mainDivStyles = css`
   display: flex;
   justify-content: center;
   background-color: #1a1a1a;
 `;
-const headerStyles = css`
-  display: flex;
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  justify-content: space-between;
-  width: 80vw;
-  padding: 50px 10px;
-  background-color: #1a1a1a;
-`;
-const navStyles = css`
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  font-size: 18px;
-`;
+
 const wideCardStyles = css`
   margin-top: 9rem;
   margin-bottom: 3rem;
@@ -87,50 +74,12 @@ const buttonDownStyles = css`
   }
 `;
 
-const anchorStyles = css`
-  text-decoration: none;
-  list-style: none;
-  :hover {
-    color: #9a66e2;
-    transition: all 0.3s ease-out;
-  }
-`;
-const roundedVid = css`
-  border-radius: 30px;
-  overflow: hidden;
-`;
 const videoStyles = css`
   height: auto;
   width: auto;
   border-radius: 15px;
 `;
-const productStyles = css`
-  margin: 10px;
-  display: flex;
-  justify-content: space-between;
-  width: 80vw;
-`;
-const headingStyles = css`
-  width: 50%;
-  margin: 10px;
-`;
-const upperHeadingStyles = css`
-  line-height: 40px;
-  margin: 10px;
-  h2 {
-    font-size: 42px;
-  }
-`;
-const lowerHeadingStyles = css`
-  margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 10px;
-  h4 {
-    width: 48%;
-  }
-`;
+
 const quickDemoStyles = css`
   margin-top: 30px;
   display: flex;
@@ -149,66 +98,14 @@ const quickDemoStyles = css`
 function App() {
   return (
     <>
-      <div css={mainDivStyles}>
-        <header css={headerStyles}>
-          <MyLogo />
-
-          <nav>
-            <ul css={navStyles}>
-              <li>
-                <a css={anchorStyles} href="./">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a css={anchorStyles} href="./">
-                  Help
-                </a>
-              </li>
-              <li>
-                <a css={anchorStyles} href="./">
-                  Contact
-                </a>
-              </li>
-              <li>
-                <a css={anchorStyles} href="./">
-                  We're hiring!
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </div>
+      <Header />
       <div css={mainDivStyles}>
         <section css={wideCardStyles}>
           <h2>✨ ClipDrop Web & API are now available in beta ✨</h2>
           <button css={buttonStyles}>Try it now</button>
         </section>
       </div>
-      <div css={mainDivStyles}>
-        <section css={productStyles}>
-          <div css={headingStyles}>
-            <div css={upperHeadingStyles}>
-              <h2>
-                Create professional product visuals without a photo studio
-              </h2>
-              <h3>Available on Android, iOS, macOS and Windows.</h3>
-            </div>
-            <button css={buttonDownStyles}>Download</button>
-            <div css={lowerHeadingStyles}>
-              <h4>Finally a practical use for AR</h4>
-
-              <h4>A new horizon of potential</h4>
-              <h4>The results are nothing short of astounding</h4>
-              <h4>Circumvents the traditional method using a single app</h4>
-            </div>
-          </div>
-
-          <video css={videoStyles} autoPlay loop src={DemoVideo}>
-            <track kind="captions" />
-          </video>
-        </section>
-      </div>
+      <ProductInfo />
       <div css={mainDivStyles}>
         <section css={quickDemoStyles}>
           <h2>Quick Demo</h2>
