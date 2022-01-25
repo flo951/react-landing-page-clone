@@ -8,6 +8,7 @@ import Header from './Header';
 import ProductInfo from './ProductInfo';
 import QuickDemo from './QuickDemo';
 import MainSection from './MainSection';
+import CommentCards from './CommentCards';
 
 const mainDivStyles = css`
   display: flex;
@@ -91,6 +92,7 @@ function App() {
         </section>
       </div>
       <MainSection />
+      <CommentCards />
     </>
   );
 }
