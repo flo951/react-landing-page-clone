@@ -9,6 +9,7 @@ import ProductInfo from './ProductInfo';
 import QuickDemo from './QuickDemo';
 import MainSection from './MainSection';
 import CommentCards from './CommentCards';
+import Footer from './Footer';
 
 const mainDivStyles = css`
   display: flex;
@@ -95,6 +96,7 @@ function App() {
           <button css={buttonDownStyles}>Download</button>
         </section>
       </div>
+      <Footer />
     </>
   );
 }
