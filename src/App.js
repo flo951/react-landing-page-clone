@@ -19,7 +19,7 @@ const headerStyles = css`
   top: 0;
   overflow: hidden;
   justify-content: space-between;
-  width: 90vw;
+  width: 80vw;
   padding: 50px 10px;
   background-color: #1a1a1a;
 `;
@@ -32,11 +32,11 @@ const navStyles = css`
 const wideCardStyles = css`
   margin-top: 9rem;
   margin-bottom: 3rem;
-  width: 90vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   background-color: #303030;
-  padding: 20px 100px;
+  padding: 30px 50px;
   border-radius: 15px;
   gap: 15px;
   h2 {
@@ -45,7 +45,7 @@ const wideCardStyles = css`
 `;
 const cardStyles = css`
   margin: 2rem 1rem;
-  width: 90vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   background-color: #303030;
@@ -57,13 +57,31 @@ const cardStyles = css`
   }
 `;
 const buttonStyles = css`
-  background-color: #9a66e2;
-  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #4f11ab;
+  font-weight: bold;
+  padding: 15px 30px;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   :hover {
     background-color: white;
+    color: black;
+    transition: all 0.7s ease-out;
+  }
+`;
+const buttonDownStyles = css`
+  font-size: 18px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  :hover {
+    background-color: #4f11ab;
     color: black;
     transition: all 0.7s ease-out;
   }
@@ -87,17 +105,21 @@ const videoStyles = css`
   border-radius: 15px;
 `;
 const productStyles = css`
+  margin: 10px;
   display: flex;
   justify-content: space-between;
-  width: 90vw;
+  width: 80vw;
 `;
 const headingStyles = css`
   width: 50%;
   margin: 10px;
 `;
 const upperHeadingStyles = css`
-  line-height: 30px;
+  line-height: 40px;
   margin: 10px;
+  h2 {
+    font-size: 42px;
+  }
 `;
 const lowerHeadingStyles = css`
   margin-top: 20px;
@@ -107,6 +129,20 @@ const lowerHeadingStyles = css`
   gap: 10px;
   h4 {
     width: 48%;
+  }
+`;
+const quickDemoStyles = css`
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    font-size: 38px;
+  }
+  h3 {
+    margin: 20px 0px;
+    color: grey;
   }
 `;
 
@@ -158,7 +194,7 @@ function App() {
               </h2>
               <h3>Available on Android, iOS, macOS and Windows.</h3>
             </div>
-            <button css={buttonStyles}>Download</button>
+            <button css={buttonDownStyles}>Download</button>
             <div css={lowerHeadingStyles}>
               <h4>Finally a practical use for AR</h4>
 
@@ -174,8 +210,8 @@ function App() {
         </section>
       </div>
       <div css={mainDivStyles}>
-        <section>
-          <h3>Quick Demo</h3>
+        <section css={quickDemoStyles}>
+          <h2>Quick Demo</h2>
           <h3>Discover key features of ClipDrop in this short demo</h3>
           <video css={videoStyles} autoPlay loop src={DemoVideo2}>
             <track kind="captions" />
@@ -185,7 +221,7 @@ function App() {
       <div css={mainDivStyles}>
         <section css={cardStyles}>
           <h2>Try it for free</h2>
-          <button css={buttonStyles}>Download</button>
+          <button css={buttonDownStyles}>Download</button>
         </section>
       </div>
     </>
