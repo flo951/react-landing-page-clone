@@ -15,9 +15,9 @@ const footerStyles = css`
   margin-top: 10rem;
   margin-bottom: 10rem;
   display: flex;
-
+  justify-content: stretch;
   background-color: #1a1a1a;
-  width: 65vw;
+  width: 70vw;
   h4 {
     margin-bottom: 20px;
   }
@@ -25,7 +25,8 @@ const footerStyles = css`
 const sectStyles = css`
   display: flex;
   flex-direction: column;
-  min-width: 12rem;
+  justify-content: flex-start;
+  min-width: 25%;
   background-color: #1a1a1a;
 `;
 const anchorStyles = css`

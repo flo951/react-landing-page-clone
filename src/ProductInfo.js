@@ -53,10 +53,7 @@ const lowerHeadingStyles = css`
     width: 48%;
   }
 `;
-const roundedVid = css`
-  border-radius: 30px;
-  overflow: hidden;
-`;
+
 const videoStyles = css`
   height: auto;
   width: auto;

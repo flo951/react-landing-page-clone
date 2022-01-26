@@ -59,7 +59,7 @@ const nameStyles = css`
     margin-left: 0;
     color: gray;
   }
-  p: before {
+  p:before {
     color: #6131ea;
     content: '“';
     font-size: 4em;
