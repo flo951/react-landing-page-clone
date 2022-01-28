@@ -81,7 +81,7 @@ export default function MainSection() {
       </div>
       <div css={mainDivStyles}>
         <section css={productStyles}>
-          <video css={videoStyles} autoPlay loop src={DemoVideo4}>
+          <video css={videoStyles} autoplay loop src={DemoVideo4}>
             <track kind="captions" />
           </video>
           <div css={headingStyles}>

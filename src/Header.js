@@ -10,10 +10,9 @@ const mainDivStyles = css`
 `;
 const headerStyles = css`
   display: flex;
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 2;
-
+  z-index: 1;
   overflow: hidden;
   justify-content: space-between;
   width: 80vw;

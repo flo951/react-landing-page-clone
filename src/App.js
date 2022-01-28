@@ -14,7 +14,7 @@ const mainDivStyles = css`
   background-color: #1a1a1a;
 `;
 const wideCardStyles = css`
-  margin-top: 9rem;
+  margin-top: 5rem;
   margin-bottom: 3rem;
   width: 80vw;
   display: flex;
