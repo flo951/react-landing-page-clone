@@ -1,9 +1,6 @@
 import './App.css';
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
-import { ReactComponent as Verge } from './images/the-verge.svg';
-import { ReactComponent as Colossal } from './images/colossal.png';
-import { ReactComponent as Wired } from './images/wired.svg';
 import Header from './Header';
 import ProductInfo from './ProductInfo';
 import QuickDemo from './QuickDemo';

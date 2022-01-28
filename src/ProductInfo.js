@@ -1,6 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import { css } from '@emotion/react';
 import DemoVideo from './images/clipdrop-demo400.mp4';
+import { ReactComponent as Verge } from './images/the-verge.svg';
+import { ReactComponent as Wired } from './images/wired.svg';
+import peta from './images/petapixel.png';
+import colossal from './images/colossal.png';
+
 const mainDivStyles = css`
   display: flex;
   justify-content: center;
@@ -45,19 +50,26 @@ const upperHeadingStyles = css`
 `;
 const lowerHeadingStyles = css`
   margin-top: 20px;
+  width: 40%;
+`;
+const iconWrapperStyles = css`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
-  h4 {
-    width: 48%;
-  }
+  gap: 50px;
 `;
 
 const videoStyles = css`
   height: auto;
   width: auto;
   border-radius: 15px;
+`;
+const iconStyles = css`
+  height: 20px;
+  background-color: white;
+  margin-top: 20px;
+  opacity: 0.5;
+  overflow: hidden;
 `;
 
 export default function ProductInfo() {
@@ -70,12 +82,23 @@ export default function ProductInfo() {
             <h3>Available on Android, iOS, macOS and Windows.</h3>
           </div>
           <button css={buttonDownStyles}>Download</button>
-          <div css={lowerHeadingStyles}>
-            <h4>Finally a practical use for AR</h4>
-
-            <h4>A new horizon of potential</h4>
-            <h4>The results are nothing short of astounding</h4>
-            <h4>Circumvents the traditional method using a single app</h4>
+          <div css={iconWrapperStyles}>
+            <div css={lowerHeadingStyles}>
+              <h4>Finally a practical use for AR</h4>
+              <Verge css={iconStyles} />
+            </div>
+            <div css={lowerHeadingStyles}>
+              <h4>A new horizon of potential</h4>
+              <Wired css={iconStyles} />
+            </div>
+            <div css={lowerHeadingStyles}>
+              <h4>The results are nothing short of astounding</h4>
+              <img css={iconStyles} alt="Petapixel" src={peta} />
+            </div>
+            <div css={lowerHeadingStyles}>
+              <h4>Circumvents the traditional method using a single app</h4>
+              <img css={iconStyles} alt="Colossal" src={colossal} />
+            </div>
           </div>
         </div>
 

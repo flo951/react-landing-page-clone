@@ -10,12 +10,14 @@ const mainDivStyles = css`
 `;
 const headerStyles = css`
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
+  z-index: 2;
+
   overflow: hidden;
   justify-content: space-between;
   width: 80vw;
-  padding: 50px 10px;
+  padding: 20px 50px;
   background-color: #1a1a1a;
 `;
 const navStyles = css`
@@ -32,6 +34,7 @@ const anchorStyles = css`
     transition: all 0.3s ease-out;
   }
 `;
+
 export default function Header() {
   return (
     <div css={mainDivStyles}>

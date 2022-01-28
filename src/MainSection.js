@@ -50,6 +50,17 @@ const imageStyles = css`
   height: 100%;
   width: 48%;
 `;
+// const arrowStyles = css`
+//   width: 0;
+//   height: 0;
+//   border-top: 6px solid transparent;
+//   border-bottom: 6px solid transparent;
+//   border-left: 6px solid green;
+// `;
+
+// const arrow = function () {
+//   return <div css={arrowStyles} />;
+// };
 
 export default function MainSection() {
   return (
@@ -63,7 +74,7 @@ export default function MainSection() {
             </div>
           </div>
 
-          <video css={videoStyles} autoPlay loop src={DemoVideo3}>
+          <video css={videoStyles} autoplay loop src={DemoVideo3}>
             <track kind="captions" />
           </video>
         </section>
@@ -81,7 +92,7 @@ export default function MainSection() {
                 cut-out technology, no matter what you’re capturing.
               </h3>
               <a css={anchorStyles} href="./">
-                Download and try for free
+                ▶︎ Download and try for free
               </a>
             </div>
           </div>
@@ -94,6 +105,7 @@ export default function MainSection() {
               <h2>Integrates with your workflow</h2>
               <h3>
                 Drag & drop images directly to any other app or website.
+                <br />
                 <span>New!</span> Import editable masks with the Plugin for
                 Adobe Photoshop.
               </h3>
