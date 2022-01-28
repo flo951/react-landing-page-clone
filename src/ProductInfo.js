@@ -60,12 +60,12 @@ const iconWrapperStyles = css`
 `;
 
 const videoStyles = css`
-  height: auto;
-  width: auto;
+  height: max-content;
+  width: max-content;
   border-radius: 15px;
 `;
 const iconStyles = css`
-  height: 20px;
+  height: 40px;
   background-color: white;
   margin-top: 20px;
   opacity: 0.5;
@@ -102,7 +102,7 @@ export default function ProductInfo() {
           </div>
         </div>
 
-        <video css={videoStyles} autoPlay loop src={DemoVideo}>
+        <video css={videoStyles} autoPlay loop muted src={DemoVideo}>
           <track kind="captions" />
         </video>
       </section>

@@ -9,6 +9,7 @@ const mainDivStyles = css`
 `;
 const quickDemoStyles = css`
   margin-top: 30px;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +34,7 @@ export default function QuickDemo() {
       <section css={quickDemoStyles}>
         <h2>Quick Demo</h2>
         <h3>Discover key features of ClipDrop in this short demo</h3>
-        <video css={videoStyles} autoPlay loop src={DemoVideo2}>
+        <video css={videoStyles} autoPlay loop muted src={DemoVideo2}>
           <track kind="captions" />
         </video>
       </section>

@@ -11,9 +11,16 @@ const mainDivStyles = css`
 `;
 
 const videoStyles = css`
-  height: auto;
-  width: 48%;
+  height: max-content;
+  width: max-content;
   border-radius: 15px;
+  margin-top: 1rem;
+`;
+const videoStyles1 = css`
+  height: fit-content;
+  width: 500px;
+  border-radius: 15px;
+  margin-top: 1rem;
 `;
 const productStyles = css`
   margin: 10px;
@@ -48,7 +55,7 @@ const anchorStyles = css`
 `;
 const imageStyles = css`
   height: 100%;
-  width: 48%;
+  width: 55%;
 `;
 // const arrowStyles = css`
 //   width: 0;
@@ -74,14 +81,14 @@ export default function MainSection() {
             </div>
           </div>
 
-          <video css={videoStyles} autoplay loop src={DemoVideo3}>
+          <video css={videoStyles1} autoPlay loop muted src={DemoVideo3}>
             <track kind="captions" />
           </video>
         </section>
       </div>
       <div css={mainDivStyles}>
         <section css={productStyles}>
-          <video css={videoStyles} autoplay loop src={DemoVideo4}>
+          <video css={videoStyles} autoPlay loop muted src={DemoVideo4}>
             <track kind="captions" />
           </video>
           <div css={headingStyles}>
